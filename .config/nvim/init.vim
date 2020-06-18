@@ -1,8 +1,9 @@
 call plug#begin()
 Plug 'joshdick/onedark.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'critiqjo/vim-bufferline'
 Plug 'itchyny/lightline.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
 call plug#end()
 let g:lightline = {
     \   'colorscheme': 'jellybeans',
