@@ -1,0 +1,18 @@
+function ctfinit() {
+      # Replace with your CTF root directory
+
+    if [ $# -eq 0 ]; then
+        cd $CTF_ROOT
+        return 0
+    fi
+
+    local CTF_NAME=$1
+    local CTF_DIR="$CTF_ROOT/$CTF_NAME"
+
+    if [ ! -d "$CTF_DIR" ]; then
+        mkdir -p "$CTF_DIR"
+        echo "Created directory: $CTF_DIR"
+    fi
+
+    cd "$CTF_DIR"
+}
