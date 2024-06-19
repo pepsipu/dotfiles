@@ -1,3 +1,5 @@
 [user]
-name = Sammy Hajhamid
-email = sh@pepsi.pw
+	name = Sammy Hajhamid
+	email = sh@pepsi.pw
+[core]
+	excludesfile = /Users/pepsipu/.gitignore_global
